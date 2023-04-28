@@ -47,7 +47,7 @@ const Tanggal = () => {
           exit="exit"
           viewport={{ once: true }}
         >
-          <Typography variant="h6" sx={{ textAlign: "center" }}>
+          <Typography variant="h6" component="div" sx={{ textAlign: "center" }}>
             {textHeader.split(" ").map((text, key) => (
               <TextMask key={key} variants={textVariants}>
                 {text}

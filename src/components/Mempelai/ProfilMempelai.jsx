@@ -80,7 +80,8 @@ const ProfilMempelai = ({ mempelai }) => {
         <Container>
           <Typography
             color="text.secondary"
-            variant="h2"
+            variant="h3"
+            component="h2"
             sx={{
               mb: 4,
               textAlign: "center",
@@ -110,6 +111,7 @@ const ProfilMempelai = ({ mempelai }) => {
           <Typography
             color="text.secondary"
             variant="h5"
+            component="div"
             sx={{ textAlign: "center" }}
           >
             {namaOrangTua.split(" ").map((text, key) => (
@@ -136,6 +138,7 @@ const ProfilMempelai = ({ mempelai }) => {
       >
         <Box
           component={motion.img}
+          alt={namaLengkap}
           variants={fotoVariants}
           initial="hidden"
           whileInView="show"

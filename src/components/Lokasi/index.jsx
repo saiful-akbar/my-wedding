@@ -1,6 +1,5 @@
 import useDB from "@/hooks/useDB";
 import { Box, Container } from "@mui/material";
-import React from "react";
 
 /**
  *
@@ -18,16 +17,17 @@ const Lokasi = () => {
       <Container>
         <Box
           component="iframe"
+          title="Google Maps"
           owfullscreen=""
           loading="lazy"
           rrerpolicy="no-referrer-when-downgrade"
           src={gmaps.iframeSrc}
           sx={{
             width: "100%",
-            height: { md: 450, xs: 350 },
+            height: 450,
             border: 0,
             borderColor: "divider",
-            borderRadius: 3,
+            borderRadius: 1,
           }}
         />
       </Container>

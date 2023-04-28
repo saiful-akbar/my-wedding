@@ -132,6 +132,7 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
         <Typography
           color="text.secondary"
           variant="h5"
+          component="p"
           sx={{ textAlign: "center", mt: 4, fontWeight: 700 }}
         >
           {tanggal.split(" ").map((text, key) => (
@@ -174,6 +175,7 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
         <Typography
           color="text.secondary"
           variant="h5"
+          component="p"
           sx={{ textAlign: "center", mt: 4, fontWeight: 700 }}
         >
           {lokasi.split(" ").map((text, key) => (
@@ -186,7 +188,7 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
         <Typography
           color="text.secondary"
           variant="body2"
-          sx={{ textAlign: "center", fontWeight: 700 }}
+          sx={{ textAlign: "center", fontWeight: 700, mt: 2 }}
         >
           {alamat.split(" ").map((text, key) => (
             <TextMask key={key} variants={textVariants}>

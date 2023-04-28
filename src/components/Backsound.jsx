@@ -1,9 +1,8 @@
-import { Box, IconButton } from "@mui/material";
 import React from "react";
-import PlayArrowTwoToneIcon from "@mui/icons-material/PlayArrowTwoTone";
 import PauseTwoToneIcon from "@mui/icons-material/PauseTwoTone";
+import PlayArrowTwoToneIcon from "@mui/icons-material/PlayArrowTwoTone";
+import { Box, IconButton } from "@mui/material";
 import { motion } from "framer-motion";
-import { transition, parentVariants } from "@/animation/transition";
 
 /**
  *
@@ -11,7 +10,9 @@ import { transition, parentVariants } from "@/animation/transition";
  */
 const Backsound = () => {
   const audioRef = React.useRef(null);
+  const containerRef = React.useRef(null);
   const [isPlay, setPlay] = React.useState(false);
+  const [constraints, setConstraints] = React.useState({});
 
   /**
    * Fungsi toggle button
@@ -43,31 +44,35 @@ const Backsound = () => {
     }
   }, [audioRef]);
 
+  // observe when browser is resizing
+  React.useLayoutEffect(() => {
+    const domRect = containerRef.current.getBoundingClientRect();
+    const { top, bottom, left, right } = domRect;
+
+    setConstraints({
+      top: -top,
+      bottom: window.innerHeight - bottom,
+      left: -left,
+      right: window.innerWidth - right,
+    });
+  }, [containerRef, setConstraints]);
+
   return (
     <Box
+      ref={containerRef}
       component={motion.div}
-      initial={{
-        opacity: 0,
-        x: "-100%",
-      }}
-      animate={{
-        opacity: 1,
-        x: 1,
-        transition,
-      }}
-      exit={{
-        opacity: 0,
-      }}
+      drag
+      dragConstraints={constraints}
       boxShadow={8}
       sx={{
         position: "fixed",
-        zIndex: 1000,
+        zIndex: 2000,
         top: "50%",
         left: 10,
         transform: "translateY(-50%)",
         backgroundColor: "rgba(213, 206, 163, 0.7)",
         borderRadius: "50%",
-        p: 0.75,
+        p: 1,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -88,6 +93,11 @@ const Backsound = () => {
         onClick={toggleAudio}
         color="secondary"
         sx={{ backgroundColor: "text.primary" }}
+        aria-label="Play button"
+        id="playButton"
+        role="button"
+        title="Play button"
+        size="small"
       >
         {isPlay ? <PauseTwoToneIcon /> : <PlayArrowTwoToneIcon />}
       </IconButton>

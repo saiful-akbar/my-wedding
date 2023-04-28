@@ -87,6 +87,7 @@ const Hero = () => {
       >
         <Box
           component={motion.img}
+          alt="Hero background"
           variants={imageVariants}
           src={hero.banner}
           sx={{
@@ -160,6 +161,7 @@ const Hero = () => {
 
             <Typography
               variant="h3"
+              component="p"
               sx={{
                 mt: 2,
                 textAlign: {

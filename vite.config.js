@@ -15,8 +15,10 @@ export default defineConfig({
         enabled: false,
       },
       workbox: {
+        sourcemap: true,
         globPatterns: [
-          "**/*.{js,css,html,ico,png,jpg,webp,svg,woff,woff2}",
+          "*.{html,ico}",
+          "**/*.{js,css,woff,woff2}",
           "**/**/**/*.{png,jpg,webp,svg}",
         ],
       },
@@ -24,8 +26,8 @@ export default defineConfig({
         name: "Saiful & Cindy",
         short_name: "S&C",
         description: "Saiful & Cindy's wedding",
-        theme_color: "#39251B",
-        background_color: "#E6E6CC",
+        theme_color: "rgb(229, 229, 203)",
+        background_color: "rgb(60, 42, 33)",
         orientation: "portrait",
         display: "standalone",
         icons: [
@@ -464,6 +466,7 @@ export default defineConfig({
           {
             src: "/assets/icons/ios/192.png",
             sizes: "192x192",
+            purpose: "any maskable",
           },
           {
             src: "/assets/icons/ios/256.png",

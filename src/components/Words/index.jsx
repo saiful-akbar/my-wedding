@@ -47,6 +47,7 @@ const Words = () => {
     >
       <Typography
         variant="h3"
+        component="div"
         sx={{
           textAlign: "center",
           fontSize: {
