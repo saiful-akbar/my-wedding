@@ -1,0 +1,68 @@
+{
+  "application": {
+    "name": "Saiful & Cindy",
+    "description": "Saiful & Cindy's wedding.",
+    "version": "1.0.0"
+  },
+  "wedding": {
+    "akad": {
+      "tanggal": "Senin, 15 Mei 2023",
+      "jam": "08.00 WIB - Selesai",
+      "lokasi": "Kediaman mempelai wanita",
+      "alamat": "Jl. H. Nurleman RT. 002 RW. 003 Kel. Benda Baru, Kec. Pamulang Kota Tangerang Selatan",
+      "gmaps": {
+        "link": "https://maps.app.goo.gl/1kM9KC9m7d477zxD9",
+        "iframeSrc": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.3727501079445!2d106.71945762812459!3d-6.330370382891928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTknNDkuOSJTIDEwNsKwNDMnMTEuOSJF!5e0!3m2!1sid!2sid!4v1681882927364!5m2!1sid!2sid"
+      }
+    },
+    "resepsi": {
+      "tanggal": "Selasa, 16 Mei 2023",
+      "jam": "09.00 WIB - Selesai",
+      "lokasi": "Kediaman mempelai wanita",
+      "alamat": "Jl. H. Nurleman RT. 002 RW. 003 Kel. Benda Baru, Kec. Pamulang Kota Tangerang Selatan",
+      "gmaps": {
+        "link": "https://maps.app.goo.gl/1kM9KC9m7d477zxD9",
+        "iframeSrc": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.3727501079445!2d106.71945762812459!3d-6.330370382891928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTknNDkuOSJTIDEwNsKwNDMnMTEuOSJF!5e0!3m2!1sid!2sid!4v1681882927364!5m2!1sid!2sid"
+      }
+    },
+    "mempelai": {
+      "pria": {
+        "namaDepan": "Saiful",
+        "namaBelakang": "Akbar",
+        "namaPanggilan": "Ipul",
+        "orangTua": {
+          "keterangan": "Putra ketiga dari keluarga",
+          "pria": "H. Murdih bin Mahir",
+          "wanita": "Mutiyah"
+        },
+        "foto": "/assets/images/mempelai/pria.webp",
+        "bg": "rgb(229, 229, 203)"
+      },
+      "wanita": {
+        "namaDepan": "Cindy",
+        "namaBelakang": "Nadya",
+        "namaPanggilan": "Cindy",
+        "orangTua": {
+          "keterangan": "Putri pertama dari keluarga",
+          "pria": "Cecep Supriyadi",
+          "wanita": "Yanih Nurliani"
+        },
+        "foto": "/assets/images/mempelai/wanita.webp",
+        "bg": "rgb(213, 206, 163)"
+      }
+    }
+  },
+  "hero": {
+    "banner": "/assets/images/hero/banner.jpg"
+  },
+  "galeri": [
+    "/assets/images/galeri/01.jpg",
+    "/assets/images/galeri/02.jpg",
+    "/assets/images/galeri/03.jpg",
+    "/assets/images/galeri/04.jpg",
+    "/assets/images/galeri/05.jpg",
+    "/assets/images/galeri/06.jpg",
+    "/assets/images/galeri/07.jpg",
+    "/assets/images/galeri/08.jpg"
+  ]
+}

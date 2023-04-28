@@ -1,0 +1,108 @@
+@use "var";
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  user-select: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.scroll-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  will-change: transform;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 100%;
+}
+
+#boxImage {
+  position: relative;
+  width: 230px;
+  height: 320px;
+  transform-style: preserve-3d;
+  animation: animasi 60s linear infinite;
+
+  @media (max-width: var.$breakpoints-lg) {
+    width: 200px;
+    height: 300px;
+  }
+
+  @media (max-width: var.$breakpoints-md) {
+    width: 150px;
+    height: 250px;
+  }
+
+  @media (max-width: var.$breakpoints-sm) {
+    width: 120px;
+    height: 200px;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(450px);
+    -webkit-box-reflect: below 0px
+      linear-gradient(transparent, transparent, #0005);
+
+    @media (max-width: var.$breakpoints-lg) {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+    }
+
+    @media (max-width: var.$breakpoints-md) {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
+    }
+
+    @media (max-width: var.$breakpoints-sm) {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+}
+
+@keyframes animasi {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
