@@ -23,8 +23,8 @@ export default defineConfig({
         ],
       },
       manifest: {
-        name: "Saiful & Cindy",
-        short_name: "S&C",
+        name: "Saiful & Cindy's wedding",
+        short_name: "Saiful & Cindy",
         description: "Saiful & Cindy's wedding. Selasa 16 Mei 2023",
         theme_color: "rgb(229, 229, 203)",
         background_color: "rgb(60, 42, 33)",
