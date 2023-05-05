@@ -67,7 +67,11 @@ const dividerVariants = {
  * @returns React.ReactElement
  */
 const Hero = () => {
-  const { hero, application, wedding } = useDB((db) => db);
+  const { hero, wedding } = useDB((db) => db);
+
+  const mempelaiPria = wedding.mempelai.pria.namaDepan;
+  const mempelaiWanita = wedding.mempelai.wanita.namaDepan;
+  const mempelai = `${mempelaiPria} & ${mempelaiWanita}`;
   const undangan = "Udangan Pernikahan";
 
   return (
@@ -146,7 +150,7 @@ const Hero = () => {
                 },
               }}
             >
-              {application.name.split(" ").map((text, key) => (
+              {mempelai.split(" ").map((text, key) => (
                 <TextMask key={key} variants={textVariants}>
                   {text}
                 </TextMask>
