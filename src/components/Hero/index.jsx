@@ -128,6 +128,7 @@ const Hero = () => {
                   md: 70,
                   xs: 45,
                 },
+                textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
               }}
             >
               {undangan.split(" ").map((text, key) => (
@@ -148,6 +149,7 @@ const Hero = () => {
                   md: "10em",
                   xs: "6em",
                 },
+                textShadow: "5px 5px rgba(60, 42, 33, 0.6)",
               }}
             >
               {mempelai.split(" ").map((text, key) => (
@@ -176,6 +178,7 @@ const Hero = () => {
                   md: "3em",
                   xs: "2em",
                 },
+                textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
               }}
             >
               {wedding.resepsi.tanggal.split(" ").map((text, key) => (

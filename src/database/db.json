@@ -1,7 +1,7 @@
 {
   "application": {
-    "name": "Saiful & Cindy's wedding",
-    "description": "Saiful & Cindy's wedding. Selasa, 16 Mei 2023",
+    "name": "The wedding of Saiful & Cindy",
+    "description": "The wedding of Saiful & Cindy. Selasa, 16 Mei 2023",
     "version": "1.0.0"
   },
   "wedding": {
@@ -53,16 +53,16 @@
     }
   },
   "hero": {
-    "banner": "/assets/images/hero/banner.jpg"
+    "banner": "/assets/images/hero/banner.webp"
   },
   "galeri": [
-    "/assets/images/galeri/01.jpg",
-    "/assets/images/galeri/02.jpg",
-    "/assets/images/galeri/03.jpg",
-    "/assets/images/galeri/04.jpg",
-    "/assets/images/galeri/05.jpg",
-    "/assets/images/galeri/06.jpg",
-    "/assets/images/galeri/07.jpg",
-    "/assets/images/galeri/08.jpg"
+    "/assets/images/galeri/galeri-01.webp",
+    "/assets/images/galeri/galeri-02.webp",
+    "/assets/images/galeri/galeri-03.webp",
+    "/assets/images/galeri/galeri-04.webp",
+    "/assets/images/galeri/galeri-05.webp",
+    "/assets/images/galeri/galeri-06.webp",
+    "/assets/images/galeri/galeri-07.webp",
+    "/assets/images/galeri/galeri-08.webp"
   ]
 }

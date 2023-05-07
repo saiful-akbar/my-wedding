@@ -39,7 +39,7 @@ const SmoothScroll = ({ children }) => {
   const transform = useTransform(scrollY, [0, pageHeight], [0, -pageHeight]);
 
   // easing of smooth scroll
-  const physics = { damping: 15, mass: 0.27, stiffness: 60 };
+  const physics = { damping: 15, mass: 0.27, stiffness: 70 };
 
   // apply easing to the negative scroll value
   const spring = useSpring(transform, physics);
