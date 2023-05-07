@@ -72,7 +72,7 @@ const Hero = () => {
   const mempelaiPria = wedding.mempelai.pria.namaDepan;
   const mempelaiWanita = wedding.mempelai.wanita.namaDepan;
   const mempelai = `${mempelaiPria} & ${mempelaiWanita}`;
-  const undangan = "Udangan Pernikahan";
+  const undangan = "Undangan Pernikahan";
 
   return (
     <motion.div
